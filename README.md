@@ -7,6 +7,8 @@ Author: deltabravozulu
 
 Date: 04 August 2020 (hbd Dylan!)
 
+_(todo: fix sudo permissions so it opens as root by default)_
+
 -----------------
 
 ### Background:
