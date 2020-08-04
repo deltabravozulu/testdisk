@@ -1,0 +1,15 @@
+5dbbb6bc2bbb30c5386a07085c3c8658  usr/bin/fidentify
+9e800a6dab9d594b361940c4ecb057ac  usr/bin/photorec
+03a0b91b98e2142c27314e2ee17da5f3  usr/bin/qphotorec
+5b604be1c7c5e7f04b9906f0d242748e  usr/bin/testdisk
+06627a8fe8d9cd1fb8eb32ddbb59addb  usr/share/applications/qphotorec.desktop
+78e0c2a57cc5dd7921165736c590387f  usr/share/doc/testdisk/changelog.Debian.gz
+a5b0553fa5e648831428f7d6c299efd3  usr/share/doc/testdisk/copyright
+58c1f9e853beeed6a41be684823f5313  usr/share/doc/testdisk/NEWS.gz
+5cc3086c7e89f93babe762cbbaf3226e  usr/share/doc/testdisk/README.md
+c675fe1eacd832e59261585fb3125075  usr/share/man/man8/fidentify.8.gz
+8e7dafdbad84ff44fd2d37b2f3478d7e  usr/share/man/man8/photorec.8.gz
+4059b36ac1269f5e16a0718363c65cad  usr/share/man/man8/qphotorec.8.gz
+d68c94e739a3796c7b2a54dc8fe5a131  usr/share/man/man8/testdisk.8.gz
+f008fff7c91c6382e0755bac1b5e7a5e  usr/share/menu/qphotorec
+1ec450a4d1c3f9567e02b3448228d9d9  usr/share/pixmaps/qphotorec.png

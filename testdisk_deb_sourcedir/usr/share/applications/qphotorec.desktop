@@ -1,0 +1,15 @@
+[Desktop Entry]
+Version=7.2-WIP
+Encoding=UTF-8
+Name=QPhotoRec
+GenericName=QPhotoRec
+Comment=GUI for PhotoRec: Recover lost files from hard disks
+Exec=/usr/bin/qphotorec
+Icon=/usr/share/pixmaps/qphotorec.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Applications;System
+GenericName[en_US]=QPhotoRec
+
+Name[en_US]=QPhotoRec

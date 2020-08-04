@@ -1,0 +1,1 @@
+?package(qphotorec):needs="X11" section="Applications/System"        title="QPhotoRec" command="/usr/bin/qphotorec"

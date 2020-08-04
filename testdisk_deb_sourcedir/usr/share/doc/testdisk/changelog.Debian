@@ -1,0 +1,71 @@
+testdisk (7.1-5) unstable; urgency=medium
+
+  * Re-upload with the correct patch to build on kfreebsd-*
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Wed, 21 Aug 2019 22:24:34 +0200
+
+testdisk (7.1-4) unstable; urgency=medium
+
+  * Re-upload with an hirher version. 
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Tue, 20 Aug 2019 22:21:52 +0200
+
+testdisk (7.1-3) unstable; urgency=medium
+
+  * Update patch to build on kfreebsd-amd64 and kfreebsd-i386 
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Sun, 18 Aug 2019 10:41:59 +0200
+
+testdisk (7.1-2) unstable; urgency=medium
+
+  * Add a patch to build on kfreebsd-amd64 and kfreebsd-i386
+  * Modifiy build dependancy to allow build on hurd-i386
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Sun, 11 Aug 2019 16:18:55 +0200
+
+testdisk (7.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove patches which are no more needed since provided upstream.
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Mon, 05 Aug 2019 21:30:03 +0200
+
+testdisk (7.0-3) unstable; urgency=medium
+
+  * Apply patch to build on mips (Closes: #847757)
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Tue, 10 Jan 2017 22:03:06 +0100
+
+testdisk (7.0-2) unstable; urgency=medium
+
+  * Remove README.Debian
+
+ -- Jean-Michel Kelbert <kelbert@debian.org>  Sun, 13 Nov 2016 22:30:44 +0100
+
+testdisk (7.0-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #793943)
+  * Added patch to support reproducible builds  (Closes: #787455, #798776)
+  * debian/control: Standards-Version: 3.9.6
+
+ -- Roland Stigge <stigge@antcom.de>  Mon, 25 Jan 2016 15:11:23 +0100
+
+testdisk (6.14-3) unstable; urgency=medium
+
+  * debian/control:
+    - Mentioning forensics and photorec in Description (Closes: #738467)
+    - Depend on ntfs-3g, rebuilding (Closes: #734244)
+    - Standards-Version: 3.9.5
+
+ -- Roland Stigge <stigge@antcom.de>  Sat, 12 Apr 2014 10:07:31 +0200
+
+testdisk (6.14-2) unstable; urgency=low
+
+  * debian/control:
+    - Build against ntfs-3g-dev rather than deprecated libntfs-dev
+      thanks to Artur Rona <ari-tczew@tlen.pl> (Closes: #723151)
+  * Updated debian/watch
+
+ -- Roland Stigge <stigge@antcom.de>  Thu, 17 Oct 2013 14:53:09 +0200
+
+# For older changelog entries, run 'apt-get changelog testdisk'
