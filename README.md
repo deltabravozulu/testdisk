@@ -1,8 +1,12 @@
 # TestDisk, PhotoRec, and QPhotoRec 7.2-WIP
 #### for 64 bit Debian-based systems
 
+-----------------
+
 Author: deltabravozulu
+
 Date: 04 August 2020 (hbd Dylan!)
+
 -----------------
 
 ### Background:
@@ -19,14 +23,35 @@ Rather than hacking around on blocking the TestDisk repo download, I decided to 
 
 ---------------
 
+### Quick install on 64-bit Debian distros:
+
+---------------
+
+1.) Open terminal (ctrl+alt+t)
+
+2.) Paste this junk in and hit enter:
+
+```
+cd ~/Downloads && wget https://github.com/deltabravozulu/testdisk-qphotorec/raw/master/testdisk_deb/testdisk_7.2-WIP-deltabravozulu-qphotorec-included_amd64.deb && sudo dpkg --install testdisk_7.2-WIP-deltabravozulu-qphotorec-included_amd64.deb
+```
+
+---------------
+
 ### Updating the .deb (if new versions emerge):
+
+---------------
 When a new version of testdisk emerges (we're at 7.2-WIP right now) basically what you are going to do is as follows:
 
 1.) Clone my repo:
-`git clone https://github.com/deltabravozulu/testdisk-qphotorec.git`
-`cd qphotorec`
+```
+# clone the repo
+git clone https://github.com/deltabravozulu/testdisk-qphotorec.git
 
-2.) Follow the instructions at [cgsecurity/testdisk](https://github.com/cgsecurity/testdisk/blob/master/INSTALL) Apologies if they change--here's how it's currently done)
+#enter the directory
+cd testdisk-qphotorec
+```
+
+2.) Follow the instructions at [cgsecurity/testdisk](https://github.com/cgsecurity/testdisk/blob/master/INSTALL) up until the part where it says `make install` (Apologies if they change--here's how it's currently done)
 	
 ```
 # uninstall old testdisk
@@ -55,7 +80,7 @@ make
 make check
 ```
 
-Now, note we are stopping here. 
+Now, note we are deviating from the install instructions and stopping here. 
 
 3.) Move files around (note, this only handles updating the binaries--if you care about updated manuals and whatnot, you'll need to grab those from ./testdisk/man after you compile it).
 ```
@@ -123,8 +148,11 @@ dpkg-deb -Z xz -b testdisk_deb_sourcedir/ testdisk_deb/
 ```
 
 8.) Now for the good stuff. Let's install it! 
-`sudo dpkg --install testdisk_deb/testdisk_7.2-WIP-deltabravozulu-qphotorec-included_amd64.deb`
-`# or whatever version you gave it--just look for the deb file.`
+
+```
+sudo dpkg --install testdisk_deb/testdisk_7.2-WIP-deltabravozulu-qphotorec-included_amd64.deb`
+# or whatever version you gave it--just look for the deb file.
+```
 
 9.) Done! 
 
