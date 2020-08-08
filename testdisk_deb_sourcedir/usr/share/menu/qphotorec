@@ -1,1 +1,4 @@
-?package(qphotorec):needs="X11" section="Applications/System"        title="QPhotoRec" command="/usr/bin/qphotorec"
+?package(qphotorec):needs="X11" section="Applications/Accessories"\
+  title="QPhotoRec" longtitle="GUI for PhotoRec"\
+  description="GUI for PhotoRec: Recover lost files from hard disks"\
+  command="/usr/bin/qphotorec" icon="/usr/share/pixmaps/qphotorec.png"

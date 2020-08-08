@@ -4,7 +4,7 @@ Architecture: amd64
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Original-Maintainer: Jean-Michel Kelbert <kelbert@debian.org>
 Packager: deltabravozulu <hgithub.com/deltabravozulu>
-Installed-Size: 14221
+Installed-Size: 14277
 Depends: libc6 (>= 2.27), libext2fs2 (>= 1.41.0), libjpeg8 (>= 8c), libncursesw6 (>= 6), libntfs-3g883, libtinfo6 (>= 6), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), ntfs-3g
 Section: admin
 Priority: optional

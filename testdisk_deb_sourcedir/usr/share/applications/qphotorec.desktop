@@ -1,5 +1,5 @@
 [Desktop Entry]
-Version=7.2-WIP
+Version=7.2-WIP-deltabravozulu-qphotorec-included
 Encoding=UTF-8
 Name=QPhotoRec
 GenericName=QPhotoRec
@@ -9,7 +9,6 @@ Icon=/usr/share/pixmaps/qphotorec.png
 Terminal=false
 MultipleArgs=false
 Type=Application
-Categories=Applications;System
+Categories=Applications;Accessories
 GenericName[en_US]=QPhotoRec
-
 Name[en_US]=QPhotoRec

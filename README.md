@@ -84,14 +84,14 @@ make check
 
 Now, note we are deviating from the install instructions and stopping here. 
 
-3.) Move files around (note, this only handles updating the binaries--if you care about updated manuals and whatnot, you'll need to grab those from ./testdisk/man after you compile it).
+3.) Move files around (note, this only handles updating the binaries--if you care about updated manuals and whatnot, you'll need to grab those from ./testdisk/man after you compile it). Here's something to note: the way in which I am making qphotorec launch as root requires that qphotrec be renamed as qphotorecbin. 
 ```
 # I'm assuming you are still in testdisk-photorec/testdisk/
 # cd up a directory 
 cd ..
 cp testdisk/src/fidentify testdisk_deb_sourcedir/usr/bin/
 cp testdisk/src/photorec testdisk_deb_sourcedir/usr/bin/
-cp testdisk/src/qphotorec testdisk_deb_sourcedir/usr/bin/
+cp testdisk/src/qphotorec testdisk_deb_sourcedir/usr/bin/qphotorecbin
 cp testdisk/src/testdisk testdisk_deb_sourcedir/usr/bin/
 ```
 
@@ -106,6 +106,7 @@ md5sum usr/share/man/man8/fidentify.8 >> DEBIAN/md5sums
 md5sum usr/share/man/man8/photorec.8 >> DEBIAN/md5sums
 md5sum usr/share/man/man8/testdisk.8 >> DEBIAN/md5sums
 md5sum usr/share/man/man8/qphotorec.8 >> DEBIAN/md5sums
+md5sum usr/share/polkit-1/actions/qphotorec.policy >> DEBIAN/md5sums
 md5sum usr/share/menu/qphotorec >> DEBIAN/md5sums
 md5sum usr/share/doc/testdisk/changelog.Debian >> DEBIAN/md5sums
 md5sum usr/share/doc/testdisk/NEWS >> DEBIAN/md5sums
@@ -115,6 +116,7 @@ md5sum usr/share/pixmaps/qphotorec.png >> DEBIAN/md5sums
 md5sum usr/bin/photorec >> DEBIAN/md5sums
 md5sum usr/bin/fidentify >> DEBIAN/md5sums
 md5sum usr/bin/qphotorec >> DEBIAN/md5sums
+md5sum usr/bin/qphotorecbin >> DEBIAN/md5sums
 md5sum usr/bin/testdisk >> DEBIAN/md5sums
 ```
 
@@ -123,11 +125,12 @@ md5sum usr/bin/testdisk >> DEBIAN/md5sums
 ```
 # The man pages for dpkg suggest that one should use the size of the entire directory in bytes/1024 as the file size and round up
 echo $(( $( du --summarize --bytes | cut --fields=1 ) / 1024 + 1 ))
-	# you can use this if you ant to be more exact:
-	# echo $(( $( du --summarize --block-size=1 | cut --fields=1 ) / 1024 + 1 ))
-	# you can also use this for the same outcome:
-	echo $(( $( du -ks | cut --fields=1 ) + 1 ))
-	# You can also just use du -ks 
+# you can use this if you want to be more exact:
+echo $(( $( du --summarize --block-size=1 | cut --fields=1 ) / 1024 + 1 ))
+# you can also use this for the same outcome:
+echo $(( $( du -ks | cut --fields=1 ) + 1 ))
+# You can also just use this:
+ du -ks 
 ```
 
 6.) Now, open DEBIAN/control and change the line that says "Installed-Size: 14xxx" (Line 7) to whatever number you decided on above. You should also change the version number (Line 2):
